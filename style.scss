@@ -1,0 +1,31 @@
+@import './layout';
+@import './components';
+@import './variables';
+
+body {
+    margin: 0px;
+    // padding-right: 50px;
+}
+
+footer {
+    background-color: $footerBg;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        height: 100px;
+        width: 100px;
+        background-color: $footerFlexContainer;
+        border: 2px solid #5C946E;
+        // flex: 1;
+        display: flex;
+    // #footer-bottom {
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     align-self: center;
+    // }
+
+    }
+}

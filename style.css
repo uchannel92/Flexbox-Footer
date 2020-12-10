@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+}
+
+footer {
+  background-color: #2A2D34;
+  height: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div {
+  height: 100px;
+  width: 100px;
+  background-color: #30C5FF;
+  border: 2px solid #5C946E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
