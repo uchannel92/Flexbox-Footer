@@ -7,25 +7,92 @@ body {
     // padding-right: 50px;
 }
 
-footer {
+footer { // This is the main container for semantic purposes. height at 100% to accomodate all items
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    height: 100%;
+    color: $footerColor;
     background-color: $footerBg;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    div {
-        height: 100px;
-        width: 100px;
-        background-color: $footerFlexContainer;
-        border: 2px solid #5C946E;
-        // flex: 1;
-        display: flex;
-    // #footer-bottom {
-    //     display: flex;
-    //     justify-content: flex-end;
-    //     align-self: center;
-    // }
 
+    .container {
+        // background-color: $footerBg;
+        height: 100%;
+        width: 100%;
+        div {
+            height: 100%;
+            width: 100px;
+            background-color: $footerFlexContainer;
+            border: $containerDivBorderTesting; // to help with picturing container space. 
+        }
     }
+
+    .footer-subContainer{
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top: 5px;
+        border-top: 1px solid #585858; // to help with picturing container space. 
+        p {
+            margin: 0px;
+            display: inline;
+        }
+        i {
+            color: $socialsColor;
+            font-size: 1.3em;
+        }
+    }
+}
+
+
+// Media Queries - quick test
+
+@media (max-width: 576px) {
+
+    // footer {
+
+
+    //     .container {
+
+
+    //         div {
+    //             width: 100%; // subject to change not effective!
+    //         }
+
+    //     }
+    // }
+    footer { // This is the main container for semantic purposes. height at 100% to accomodate all items
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 15px;
+        height: 100%;
+        color: $footerColor;
+        background-color: $footerBg;
+    
+        .container {
+            // background-color: $footerBg;
+            height: 100%;
+            width: 100%;
+            div {
+                height: 100%;
+                width: 100%;
+                background-color: $footerFlexContainer;
+                border: $containerDivBorderTesting; // to help with picturing container space. 
+            }
+        }
+    
+        .footer-subContainer{
+            padding-top:5px;
+            padding-bottom:5px;
+            margin-top: 5px;
+            border-top: 1px solid #585858; // to help with picturing container space.
+            p {
+                margin: 0px;
+                
+            }
+            i {
+                font-size: 1.5em;
+            }
+        }
+    }
+
 }

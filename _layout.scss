@@ -1,0 +1,26 @@
+.container {
+    // background-color: $footerBg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        // align-items: flex-start; // helps move the div contanier
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+    }
+}

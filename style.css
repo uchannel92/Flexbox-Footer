@@ -1,11 +1,4 @@
-body {
-  margin: 0px;
-}
-
-footer {
-  background-color: #2A2D34;
-  height: 300px;
-  width: 100%;
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,13 +10,118 @@ footer {
           align-items: center;
 }
 
-footer div {
-  height: 100px;
-  width: 100px;
-  background-color: #30C5FF;
-  border: 2px solid #5C946E;
+.container div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body {
+  margin: 0px;
+}
+
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  height: 100%;
+  color: #ffffff;
+  background-color: #2A2D34;
+}
+
+footer .container {
+  height: 100%;
+  width: 100%;
+}
+
+footer .container div {
+  height: 100%;
+  width: 100px;
+  background-color: #30C5FF;
+  border: 2px solid #5C946E;
+}
+
+footer .footer-subContainer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  border-top: 1px solid #585858;
+}
+
+footer .footer-subContainer p {
+  margin: 0px;
+  display: inline;
+}
+
+footer .footer-subContainer i {
+  color: yellow;
+  font-size: 1.3em;
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 15px;
+    height: 100%;
+    color: #ffffff;
+    background-color: #2A2D34;
+  }
+  footer .container {
+    height: 100%;
+    width: 100%;
+  }
+  footer .container div {
+    height: 100%;
+    width: 100%;
+    background-color: #30C5FF;
+    border: 2px solid #5C946E;
+  }
+  footer .footer-subContainer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    border-top: 1px solid #585858;
+  }
+  footer .footer-subContainer p {
+    margin: 0px;
+  }
+  footer .footer-subContainer i {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
